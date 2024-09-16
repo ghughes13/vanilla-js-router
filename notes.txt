@@ -1,0 +1,15 @@
+
+
+<div id="first" show> </div>
+<div id="second" hidden> </div>
+<div id="third" hidden> </div>
+
+
+We will use history api
+history.pushState(optional_state, null, "/some-route");
+
+window.addEventListener("popstate", e => {
+  let url = location.href;
+})
+
+popstate is not fired if user goes to an external link. 
