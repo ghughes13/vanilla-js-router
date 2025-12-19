@@ -50,3 +50,19 @@ const Router = {
 };
 
 export default Router;
+
+const data = [
+  {
+    name: "test",
+    price: 5,
+  },
+  { name: "final", price: 12 },
+  { name: "blue", price: 2 },
+];
+
+data.forEach((product) => {
+  const productCardEl = document.createElement("product-card");
+  productCardEl.productCardItem = product;
+
+  document.body.appendChild(productCardEl);
+});
